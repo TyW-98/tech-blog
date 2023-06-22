@@ -12,3 +12,7 @@ body {
   color: #bbb;
   margin: 0 auto;
 }
+
+main {
+  height: 100vh;
+}
