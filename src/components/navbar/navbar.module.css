@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 20px;
+}
+
+.branding {
+    font-size: 45px;
+}
+
+.navoptions {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}

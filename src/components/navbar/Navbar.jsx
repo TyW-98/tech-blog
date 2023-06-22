@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./navbar.module.css";
 
 export default function Navbar() {
   const pages = [
@@ -35,19 +36,19 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="navbar-container">
-      <div className="navbar-branding">
-        <Link href="/" className="navbar-link">
+    <div className={styles.container}>
+      <div>
+        <Link href="/" className={`${styles.navlink} ${styles.branding}`}>
           TxInsider
         </Link>
       </div>
 
-      <div className="navbar-navigation">
-        <ul>
+      <div className={styles.navigation}>
+        <ul className={styles.navoptions}>
           {pages.map((page) => {
             return (
               <li key={page.id}>
-                <Link href={page.url} className="navbar-link">
+                <Link href={page.url} className={styles.navlink}>
                   {page.name}
                 </Link>
               </li>
