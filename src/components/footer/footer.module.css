@@ -14,3 +14,21 @@
     margin: 0 5px;
     cursor: pointer;
 }
+
+.social-icons:hover {
+    animation: jumping 1s infinite;
+}
+
+@keyframes jumping {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
