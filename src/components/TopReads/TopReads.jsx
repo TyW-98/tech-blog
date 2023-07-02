@@ -12,7 +12,7 @@ export default function TopReads() {
     },
     {
       id: uuidv4(),
-      title: "Decoding Quantum COmputing: The Future of Technology",
+      title: "Decoding Quantum Computing: The Future of Technology",
     },
     {
       id: uuidv4(),

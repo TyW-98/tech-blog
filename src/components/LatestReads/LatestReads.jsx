@@ -1,6 +1,7 @@
 import styles from "./latestreads.module.css";
 import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LatestReads() {
   const testLatestArticles = [
@@ -34,15 +35,24 @@ export default function LatestReads() {
         {testLatestArticles.map((article) => {
           return (
             <div key={article.id} className={styles["article-container"]}>
-              <h5 className={styles.subheading}>{article.title}</h5>
-              <Image
-                src={`/images/latestArticles/${article.image}.jpg`}
-                alt="article image"
-                width={150}
-                height={200}
-                className={styles["article-image"]}
-              />
-              <p className={styles.summary}>{article.summary}</p>
+              <h3>
+                <Link
+                  href={`/blog/${article.id}`}
+                  className={styles.subheading}
+                >
+                  {article.title}
+                </Link>
+              </h3>
+              <div className={styles["info-container"]}>
+                <Image
+                  src={`/images/latestArticles/${article.image}.jpg`}
+                  alt="article image"
+                  width={150}
+                  height={150}
+                  className={styles["article-image"]}
+                />
+                <p className={styles.summary}>{article.summary}</p>
+              </div>
             </div>
           );
         })}

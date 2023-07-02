@@ -1,3 +1,27 @@
 .container {
     margin-left: 40px;
+    padding-top: 10px;
+}
+
+.latest-news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px
+}
+
+.subheading {
+    display: inline;
+    text-decoration: none;
+    color: #bbb;
+    text-decoration: underline;
+}
+
+.info-container {
+    margin-top: 10px;
+}
+
+.article-image {
+    float: right;
+    margin-left: 15px;
 }
