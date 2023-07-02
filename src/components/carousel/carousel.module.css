@@ -43,8 +43,14 @@
     padding: 5px 20px;
     background-color: rgb(77, 77, 216);
     border-radius: 25px;
-    color: white;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.read-more-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
 
 .top5-stories-container {

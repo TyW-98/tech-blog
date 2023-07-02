@@ -60,7 +60,11 @@ export default function Carousel() {
               future, brimming with enhanced efficiency, connectivity, and
               endless opportunities.
             </p>
-            <button className={styles["read-more-btn"]}>Read More</button>
+            <button className={styles["read-more-btn"]}>
+              <Link href={"/blog/"} className={styles["read-more-link"]}>
+                Read More
+              </Link>
+            </button>
           </div>
           <div className={styles["top5-stories-container"]}>
             <ul className={styles["top5-stories"]}>

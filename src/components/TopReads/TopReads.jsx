@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./topreads.module.css";
 import { v4 as uuidv4 } from "uuid";
+import LatestReads from "../LatestReads/LatestReads";
 
 export default function TopReads() {
   const testPopularArticles = [
@@ -40,6 +41,7 @@ export default function TopReads() {
           );
         })}
       </div>
+      <LatestReads />
     </div>
   );
 }
