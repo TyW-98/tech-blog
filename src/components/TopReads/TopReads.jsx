@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./topreads.module.css";
 import { v4 as uuidv4 } from "uuid";
 
@@ -22,13 +23,18 @@ export default function TopReads() {
   return (
     <div className={styles.container}>
       <div className={styles["popular-reads"]}>
-        <h3>Trending Now</h3>
+        <h3 className={styles.heading}>Trending Now</h3>
         {testPopularArticles.map((article, index) => {
           return (
             <div className={styles["popular-story-container"]} key={article.id}>
               <div className={styles.ranking}>{index + 1}</div>
-              <div className={styles["popular-story-title"]}>
-                {article.title}
+              <div>
+                <Link
+                  href={`blog/${article.id}`}
+                  className={styles["popular-story-title"]}
+                >
+                  {article.title}
+                </Link>
               </div>
             </div>
           );

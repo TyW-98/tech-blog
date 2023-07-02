@@ -11,6 +11,10 @@
     font-size: 20px;
 }
 
+.navlink:hover {
+    color: rgb(151, 153, 19);
+}
+
 .branding {
     font-size: 45px;
 }

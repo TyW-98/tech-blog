@@ -2,3 +2,33 @@
     margin-top: 40px;
     border-top: solid 1px;
 }
+
+.heading {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.popular-story-container {
+    width: 300px;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 0.175fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+}
+
+.popular-story-container:last-of-type {
+    border: none;
+}
+
+.ranking {
+    font-size: 36px;
+    color: rgb(151, 153, 19);
+}
+
+.popular-story-title {
+    font-size: 20px;
+    text-decoration: none;
+    color: #bbb;
+}
