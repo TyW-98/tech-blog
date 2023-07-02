@@ -1,0 +1,66 @@
+.container {
+    width: 100%;
+    height: 500px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.top-container-left {
+    grid-column: 1;
+}
+
+.top-container-right {
+    grid-column: 2;
+}
+
+.top-stories {
+    text-align: justify;
+}
+
+.top-stories h3 {
+    margin-bottom: 20px;
+}
+
+.top-story-image {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.read-more-btn {
+    padding: 5px 20px;
+    background-color: rgb(77, 77, 216);
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.top5-stories-container {
+    margin-top: 20px;
+}
+
+.top5-stories-li {
+    padding: 7.5px 0;
+    border-bottom: solid 1px;
+}
+
+.top5-stories-li:first-of-type {
+    border-top: solid 1px;
+}
+
+.top5-stories-titles {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 16px;
+}
