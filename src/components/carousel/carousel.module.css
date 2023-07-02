@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    height: 500px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.top-container {
+    display: flex;
+}
+
+.top-stories {
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.top-stories h3 {
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    padding: 5px 20px;
+    background-color: rgb(77, 77, 216);
+    border-radius: 25px;
+    color: white;
+    margin-top: 30px;
+}
