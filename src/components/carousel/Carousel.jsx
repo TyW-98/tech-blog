@@ -66,8 +66,11 @@ export default function Carousel() {
             <ul className={styles["top5-stories"]}>
               {testArticles.map((article) => {
                 return (
-                  <li key={article.id}>
-                    <Link className="top5-stories-titles" href="">
+                  <li key={article.id} className={styles["top5-stories-li"]}>
+                    <Link
+                      className={styles["top5-stories-titles"]}
+                      href={`blog/${article.id}`}
+                    >
                       {article.title}
                     </Link>
                   </li>

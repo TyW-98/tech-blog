@@ -49,3 +49,18 @@
 .top5-stories-container {
     margin-top: 20px;
 }
+
+.top5-stories-li {
+    padding: 7.5px 0;
+    border-bottom: solid 1px;
+}
+
+.top5-stories-li:first-of-type {
+    border-top: solid 1px;
+}
+
+.top5-stories-titles {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 16px;
+}
