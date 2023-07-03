@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    width: 350px;
+    align-items: center;
+}
+
+.profile-picture {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

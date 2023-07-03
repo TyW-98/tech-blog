@@ -11,8 +11,10 @@ export default function ProfileCard(props) {
         height={100}
         className={styles["profile-picture"]}
       />
-      <h3 className={styles.name}>{props.name}</h3>
-      <h5 className={styles.position}>{props.position}</h5>
+      <div className={styles.info}>
+        <h3 className={styles.name}>{props.name}</h3>
+        <h5 className={styles.position}>{props.position}</h5>
+      </div>
     </div>
   );
 }

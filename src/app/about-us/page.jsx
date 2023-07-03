@@ -16,19 +16,14 @@ export default function About() {
       image: "m1",
     },
     {
-      name: "Emily Wilson",
-      position: "Senior Data Scientist",
-      image: "f2",
-    },
-    {
       name: "Noah Anderson",
       position: "IT Project Manager",
       image: "m2",
     },
     {
-      name: "Sara Chang",
-      position: "UX/UI Designer",
-      image: "f3",
+      name: "Emily Wilson",
+      position: "Senior Data Scientist",
+      image: "f2",
     },
     {
       name: "Samuel Kim",
@@ -36,14 +31,20 @@ export default function About() {
       image: "m3",
     },
     {
-      name: "Ava Smith",
-      position: "Full Stack Developer",
-      image: "f4",
+      name: "Sara Chang",
+      position: "UX/UI Designer",
+      image: "f3",
     },
+
     {
       name: "Benjamin Martinez",
       position: "DevOps Engineer",
       image: "m4",
+    },
+    {
+      name: "Ava Smith",
+      position: "Full Stack Developer",
+      image: "f4",
     },
   ];
   return (
@@ -99,6 +100,9 @@ export default function About() {
         </div>
       </div>
       <div className={styles["container"]}>
+        <div>
+          <h3>Our Vision</h3>
+        </div>
         <div>
           <h3>Meet the Team</h3>
           <div className={styles["teams-container"]}>
