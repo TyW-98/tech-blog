@@ -99,17 +99,20 @@ export default function About() {
         </div>
       </div>
       <div className={styles["container"]}>
-        <div className={styles["teams-container"]}>
-          {testTeamProfile.map((profile) => {
-            return (
-              <ProfileCard
-                key={profile.name}
-                name={profile.name}
-                image={profile.image}
-                position={profile.position}
-              />
-            );
-          })}
+        <div>
+          <h3>Meet the Team</h3>
+          <div className={styles["teams-container"]}>
+            {testTeamProfile.map((profile) => {
+              return (
+                <ProfileCard
+                  key={profile.name}
+                  name={profile.name}
+                  image={profile.image}
+                  position={profile.position}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </main>
