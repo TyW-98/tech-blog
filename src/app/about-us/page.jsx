@@ -1,7 +1,6 @@
 import ProfileCard from "./ProfileCard";
 import styles from "./page.module.css";
 import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
 
 export default function About() {
   const testTeamProfile = [
@@ -58,7 +57,7 @@ export default function About() {
       />
       <div className={styles.container}>
         <div className={styles.left}>
-          <h3>Who Are We?</h3>
+          <h3 className={styles.heading}>Who Are We?</h3>
           <p>
             TxInsider is a diverse, global collective of tech enthusiasts,
             innovators, coders, data scientists, and cybersecurity experts. We
@@ -78,7 +77,7 @@ export default function About() {
           </p>
         </div>
         <div className={styles.right}>
-          <h3>What We Do?</h3>
+          <h3 className={styles.heading}>What We Do?</h3>
           <p>
             At TxInsider, we make the complex world of technology accessible to
             all. Whether you're a seasoned tech guru or a novice just beginning
@@ -100,11 +99,36 @@ export default function About() {
         </div>
       </div>
       <div className={styles["container"]}>
-        <div>
-          <h3>Our Vision</h3>
+        <div className={styles["our-vision"]}>
+          <h3 className={styles.heading}>Our Vision</h3>
+          <p>
+            At TxInsider, we envision ourselves as the digital compass guiding
+            technology enthusiasts and professionals around the globe. We aspire
+            to be more than just a tech news platform - we aim to be a thriving
+            community where ideas are nurtured, knowledge is exchanged, and
+            innovation is celebrated. We are committed to breaking down complex
+            tech concepts into accessible information, fostering intellectual
+            curiosity, and nurturing a passion for technology in our diverse
+            readership.
+            <br></br>
+            <br></br>
+            Our goal is to light up the path towards technological enlightenment
+            with our rich content, insightful expert analyses, and in-depth tech
+            news coverage. We want to stimulate thought, inspire innovation, and
+            empower our readers to explore the limitless possibilities of
+            technology. In pursuit of this vision, we set ourselves the
+            following missions:
+            <br></br>
+            <br></br>
+          </p>
+          <p>
+            Join us as we strive to make technology more fascinating and
+            approachable than ever before. Together, we can power the future,
+            today.
+          </p>
         </div>
         <div>
-          <h3>Meet the Team</h3>
+          <h3 className={styles.heading}>Meet the Team</h3>
           <div className={styles["teams-container"]}>
             {testTeamProfile.map((profile) => {
               return (
