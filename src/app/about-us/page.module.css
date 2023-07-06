@@ -1,0 +1,42 @@
+.aims::before {
+    content: "• ";
+    color: #007BFF;
+    /* You can change the color to whatever you want */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.heading {
+    font-size: 32px;
+}
+
+.left p,
+.right p {
+    text-align: justify;
+}
+
+.teams-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin-top: 5px;
+}
+
+.our-vision {
+    text-align: justify
+}
