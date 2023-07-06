@@ -25,6 +25,32 @@ export default function Contact() {
     return capitaliseWord.join(" ");
   }
 
+  function handleInput(event) {
+    const { name, value } = event.target;
+    const detailField = Object.keys(details);
+    const messageField = Object.keys(messageInfo);
+
+    if (detailField.includes(name)) {
+      setDetails((prevDetails) => {
+        return {
+          ...prevDetails,
+          [name]: value,
+        };
+      });
+    } else if (messageField.includes(name)) {
+      setMessageInfo((prevMessageInfo) => {
+        return {
+          ...prevMessageInfo,
+          [name]: value,
+        };
+      });
+    }
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <main>
       <div className={styles.container}>
@@ -53,6 +79,9 @@ export default function Contact() {
                     name={detailField}
                     value={details[detailField]}
                     className={styles["input-field"]}
+                    onChange={(event) => {
+                      handleInput(event);
+                    }}
                   ></input>
                 </div>
               );
@@ -76,6 +105,9 @@ export default function Contact() {
                       value={messageInfo[messageField]}
                       className={styles[`${messageField}-field`]}
                       rows={10}
+                      onChange={(event) => {
+                        handleInput(event);
+                      }}
                     ></textarea>
                   ) : (
                     <input
@@ -84,13 +116,22 @@ export default function Contact() {
                       name={messageField}
                       value={messageInfo[messageField]}
                       className={styles[`${messageField}-field`]}
+                      onChange={(event) => {
+                        handleInput(event);
+                      }}
                     ></input>
                   )}
                 </div>
               );
             })}
           </div>
-          <button type="submit" className={styles.submitBtn}>
+          <button
+            type="submit"
+            className={styles.submitBtn}
+            onClick={(event) => {
+              handleSubmit(event);
+            }}
+          >
             Submit
           </button>
         </form>
