@@ -1,11 +1,55 @@
+.banner {
+    width: 100%;
+    height: 275px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-form {
+    width: max-content;
+    margin: 0 auto;
+}
+
 .details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: 20px 50px;
+    margin-top: 10px;
 }
 
-.detail-field-label {
+.detail-field-label,
+.message-field-label {
     display: block;
 }
 
-.input-field {}
+.input-field {
+    width: 300px;
+    padding: 10px;
+}
+
+.message-field-label {
+    margin-top: 10px;
+}
+
+.subject-field,
+.message-field {
+    width: 100%;
+}
+
+.subject-field {
+    padding: 10px;
+}
+
+.submitBtn {
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(46, 80, 190);
+    font-weight: 600;
+    font-size: 16px;
+}
