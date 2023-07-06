@@ -1,0 +1,54 @@
+.banner {
+    width: 100%;
+    height: 275px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-form {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px 50px;
+    margin-top: 5px;
+}
+
+.detail-field-label,
+.message-field-label {
+    display: block;
+}
+
+.input-field {
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.message-field-label {
+    margin-top: 5px;
+}
+
+.subject-field,
+.message-field {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.submitBtn {
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(46, 80, 190);
+    font-weight: 600;
+    font-size: 16px;
+}
