@@ -1,4 +1,4 @@
-import BlogCard from "./BlogCard";
+import BlogCard from "./ArticleCard";
 import styles from "./page.module.css";
 import { v4 as uuidv4 } from "uuid";
 
