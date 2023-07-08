@@ -2,4 +2,45 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    width: max-content;
+}
+
+.article-image {
+    width: 250px;
+    height: 150px;
+}
+
+.article {
+    padding-top: 10px;
+}
+
+.hero {
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.category {
+    color: orange;
+}
+
+.content h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6.5px;
+}
+
+.name {
+    font-weight: bold;
 }

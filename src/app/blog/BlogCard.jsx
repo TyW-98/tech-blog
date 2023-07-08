@@ -19,10 +19,10 @@ export default function BlogCard(props) {
         <div className={styles.content}>
           <h5>{props.article.summary}</h5>
           <div className={styles.info}>
-            <p>
-              {props.article.author} {props.article.time} GMT+1 •{" "}
-              {props.article.date}
-            </p>
+            <span className={styles.name}>{props.article.author}</span>{" "}
+            <span className={styles["created-info"]}>
+              {props.article.time} GMT+1 • {props.article.date}
+            </span>
           </div>
         </div>
       </div>
