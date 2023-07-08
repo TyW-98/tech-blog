@@ -1,0 +1,26 @@
+.container {
+    margin: 10px 0;
+}
+
+.header {
+    border-bottom: solid 3px rgb(25, 115, 156);
+}
+
+.article-list {
+    list-style: none;
+}
+
+.article {
+    padding: 10px 0;
+}
+
+.title {
+    text-decoration: none;
+    color: inherit;
+    text-align: justify;
+}
+
+.title:hover {
+    text-decoration: underline;
+    color: rgb(151, 153, 19);
+}

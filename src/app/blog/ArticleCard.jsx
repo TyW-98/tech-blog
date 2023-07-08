@@ -1,4 +1,4 @@
-import styles from "./blogcard.module.css";
+import styles from "./articlecard.module.css";
 import Image from "next/image";
 
 export default function BlogCard(props) {

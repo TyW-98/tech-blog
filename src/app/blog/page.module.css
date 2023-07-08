@@ -1,8 +1,15 @@
 .header {
     text-align: center;
-    border-bottom: double 3px yellowgreen;
+    border-bottom: double 3px rgb(25, 115, 156);
     padding: 5px;
     font-size: 20px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
 }
 
 .article-list-container {
@@ -12,4 +19,9 @@
 .article {
     max-width: 85%;
     margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
