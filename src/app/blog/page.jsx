@@ -38,8 +38,10 @@ export default function Blog() {
 
   return (
     <main>
-      <div>
-        <h2>The Latest TxInsider Article</h2>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <h2>The Latest TxInsider Article</h2>
+        </div>
         <div className={styles["article-list-container"]}>
           {testArticle.map((article) => {
             return (

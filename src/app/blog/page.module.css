@@ -1,4 +1,15 @@
+.header {
+    text-align: center;
+    border-bottom: double 3px yellowgreen;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.article-list-container {
+    margin-top: 10px;
+}
+
 .article {
-    width: 85%;
+    max-width: 85%;
     margin: 0 auto;
 }
