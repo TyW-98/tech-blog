@@ -5,6 +5,12 @@
     font-size: 20px;
 }
 
+.category-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
 .article-list-container {
     margin-top: 10px;
 }
@@ -12,4 +18,9 @@
 .article {
     max-width: 85%;
     margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
