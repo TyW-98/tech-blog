@@ -42,7 +42,11 @@ export default function Blog() {
         <h2>The Latest TxInsider Article</h2>
         <div className={styles["article-list-container"]}>
           {testArticle.map((article) => {
-            return <BlogCard article={article} key={article.id} />;
+            return (
+              <div className={styles.article} key={article.id}>
+                <BlogCard article={article} />
+              </div>
+            );
           })}
         </div>
       </div>
