@@ -36,6 +36,16 @@ export default function Blog() {
       date: "2023-06-17",
       time: "11:45AM",
     },
+    {
+      id: uuidv4(),
+      title: "Cybersecurity Best Practices: Protecting Your Digital Assets",
+      category: "Cybersecurity",
+      summary:
+        "Learn essential cybersecurity practices to safeguard your digital assets from threats and vulnerabilities.",
+      author: "Emily Thompson",
+      date: "2023-06-20",
+      time: "4:00PM",
+    },
   ];
 
   const testCategory = [
@@ -191,21 +201,9 @@ export default function Blog() {
   return (
     <main>
       <div className={styles.container}>
-        <section className={styles["category-container"]}>
-          {testCategory.map((cat) => {
-            return (
-              <div className={styles["category-card"]} key={cat.id}>
-                <CategoricalCard
-                  category={cat.category}
-                  articles={cat.articles}
-                />
-              </div>
-            );
-          })}
-        </section>
         <section className={styles["latest-article-container"]}>
           <div className={styles.header}>
-            <h2>The Latest TxInsider Article</h2>
+            <h2>LATEST ARTICLES</h2>
           </div>
           <div className={styles["article-list-container"]}>
             {testArticle.map((article) => {
@@ -222,6 +220,18 @@ export default function Blog() {
               );
             })}
           </div>
+        </section>
+        <section className={styles["category-container"]}>
+          {testCategory.map((cat) => {
+            return (
+              <div className={styles["category-card"]} key={cat.id}>
+                <CategoricalCard
+                  category={cat.category}
+                  articles={cat.articles}
+                />
+              </div>
+            );
+          })}
         </section>
       </div>
     </main>
