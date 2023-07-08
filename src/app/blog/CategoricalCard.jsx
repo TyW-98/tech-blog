@@ -4,13 +4,15 @@ import Link from "next/link";
 export default function CategoricalCard(props) {
   return (
     <div className={styles.container}>
-      <h1>{props.category}</h1>
-      <div className={styles["article-list"]}>
-        <ul>
+      <h1 className={styles.header}>{props.category}</h1>
+      <div>
+        <ul className={styles["article-list"]}>
           {props.articles.map((article) => {
             return (
-              <li key={article.id}>
-                <Link href={`/blog/${article.id}`}>{article.title}</Link>
+              <li key={article.id} className={styles.article}>
+                <Link href={`/blog/${article.id}`} className={styles.title}>
+                  {article.title}
+                </Link>
               </li>
             );
           })}
