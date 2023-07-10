@@ -1,3 +1,10 @@
 .container {
     padding: 0 20px;
 }
+
+.other-articles-container {
+    border-top: double 3px;
+    width: max-content;
+    margin: 20px auto 0;
+    padding-top: 20px;
+}

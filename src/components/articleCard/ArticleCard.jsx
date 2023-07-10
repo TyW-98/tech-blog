@@ -1,11 +1,11 @@
 import styles from "./articlecard.module.css";
 import Image from "next/image";
 
-export default function BlogCard(props) {
+export default function ArticleCard(props) {
   return (
     <div className={styles.container}>
       <Image
-        src={"/images/blog-card/test-image.jpg"}
+        src={`/images/blog-card/${props.article.image}`}
         alt="article image"
         width={100}
         height={100}
