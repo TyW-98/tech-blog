@@ -1,8 +1,8 @@
 import Link from "next/link";
-import BlogCard from "./ArticleCard";
 import styles from "./page.module.css";
 import { v4 as uuidv4 } from "uuid";
 import CategoricalCard from "./CategoricalCard";
+import ArticleCard from "@/components/articleCard/ArticleCard";
 
 export default function Blog() {
   const testArticle = [
@@ -15,6 +15,7 @@ export default function Blog() {
       author: "John Smith",
       date: "2023-06-15",
       time: "09:30AM",
+      image: "test-image.jpg",
     },
     {
       id: uuidv4(),
@@ -25,6 +26,7 @@ export default function Blog() {
       author: "Emily Johnson",
       date: "2023-06-16",
       time: "14:15PM",
+      image: "test-image.jpg",
     },
     {
       id: uuidv4(),
@@ -35,6 +37,7 @@ export default function Blog() {
       author: "Michael Brown",
       date: "2023-06-17",
       time: "11:45AM",
+      image: "test-image.jpg",
     },
     {
       id: uuidv4(),
@@ -45,6 +48,7 @@ export default function Blog() {
       author: "Emily Thompson",
       date: "2023-06-20",
       time: "4:00PM",
+      image: "test-image.jpg",
     },
   ];
 
@@ -214,7 +218,7 @@ export default function Blog() {
                   className={styles.link}
                 >
                   <div className={styles.article}>
-                    <BlogCard article={article} />
+                    <ArticleCard article={article} />
                   </div>
                 </Link>
               );

@@ -1,0 +1,52 @@
+.container {
+    padding-top: 20px;
+}
+
+.details {
+    padding: 0 20px;
+}
+
+.header {
+    font-size: 42px;
+}
+
+.category {
+    font-size: 24px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.article-details-container {
+    margin: 10px 0 0;
+}
+
+.article-details {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+.symbol {
+    color: bisque;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0 20px;
+}
