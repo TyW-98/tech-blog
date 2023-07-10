@@ -1,7 +1,14 @@
-export default function BlogContent() {
+import Article from "./Article";
+import OtherArticles from "./OtherArticles";
+import styles from "./page.module.css";
+
+export default function BlogContent(props) {
   return (
     <main>
-      <h1>Individual Blog Content</h1>
+      <div className={styles.container}>
+        <Article />
+        <OtherArticles />
+      </div>
     </main>
   );
 }

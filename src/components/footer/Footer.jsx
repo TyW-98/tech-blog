@@ -9,21 +9,21 @@ export default function Footer() {
     <div className={styles.container}>
       <div className={styles["social-icons-container"]}>
         <Image
-          src="./icons/github-icon.svg"
+          src="/icons/github-icon.svg"
           width={iconSize}
           height={iconSize}
           alt="github"
           className={styles["social-icons"]}
         />
         <Image
-          src="./icons/twitter-icon.svg"
+          src="/icons/twitter-icon.svg"
           width={iconSize}
           height={iconSize}
           alt="twitter"
           className={styles["social-icons"]}
         />
         <Image
-          src="./icons/youtube-icon.svg"
+          src="/icons/youtube-icon.svg"
           width={iconSize}
           height={iconSize}
           alt="youtube"
