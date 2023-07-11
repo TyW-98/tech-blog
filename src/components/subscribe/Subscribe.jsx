@@ -7,17 +7,12 @@ export default function Subscribe() {
   const [email, setEmail] = useState("");
   const [submitted, setsubmitted] = useState(false);
 
-  function handleEmailInput(event) {
-    const { value } = event.target;
-    setEmail((prevEmail) => {
-      return {
-        value,
-      };
-    });
-  }
-
   function handleSubmit(event) {
-    setsubmitted(true);
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (regex.test(email)) {
+      setsubmitted(true);
+    }
   }
 
   return (
@@ -66,7 +61,11 @@ export default function Subscribe() {
                 type="email"
                 className={styles["email-field"]}
                 placeholder="email-address"
-                onChange={handleEmailInput}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
+                value={email}
+                required
               />
               <button
                 className={styles.subscribe}
