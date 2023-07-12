@@ -61,7 +61,7 @@ export default function Carousel() {
               endless opportunities.
             </p>
             <button className={styles["read-more-btn"]}>
-              <Link href={"/blog/"} className={styles["read-more-link"]}>
+              <Link href={"/blog/214"} className={styles["read-more-link"]}>
                 Read More
               </Link>
             </button>
