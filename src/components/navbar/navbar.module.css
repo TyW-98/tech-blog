@@ -24,3 +24,8 @@
     gap: 30px;
     list-style: none;
 }
+
+.options {
+    display: flex;
+    gap: 20px;
+}
