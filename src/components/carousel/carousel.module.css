@@ -75,3 +75,7 @@
     color: #bbb;
     font-size: 16px;
 }
+
+.top5-stories-titles:hover {
+    color: rgb(24, 108, 187);
+}

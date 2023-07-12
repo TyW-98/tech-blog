@@ -17,6 +17,10 @@
     text-decoration: underline;
 }
 
+.subheading:hover {
+    color: rgb(24, 108, 187);
+}
+
 .info-container {
     margin-top: 10px;
 }
