@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    border: 1.5px solid rgb(24, 108, 187);
+    border-radius: 15px;
+    position: relative;
+    align-items: center;
+    padding: 2.5px 10px;
+    gap: 10px;
+}
+
+.moon,
+.sun {
+    font-size: 20px;
+}
+
+.indicator {
+    width: 24px;
+    height: 24px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+}
