@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import ThemeToggle from "../themetoggle/ThemeToggle";
 
 export default function Navbar() {
   const pages = [
@@ -42,19 +43,22 @@ export default function Navbar() {
           TxInsider
         </Link>
       </div>
+      <div className={styles.options}>
+        <ThemeToggle />
 
-      <div className={styles.navigation}>
-        <ul className={styles.navoptions}>
-          {pages.map((page) => {
-            return (
-              <li key={page.id}>
-                <Link href={page.url} className={styles.navlink}>
-                  {page.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <div className={styles.navigation}>
+          <ul className={styles.navoptions}>
+            {pages.map((page) => {
+              return (
+                <li key={page.id}>
+                  <Link href={page.url} className={styles.navlink}>
+                    {page.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );

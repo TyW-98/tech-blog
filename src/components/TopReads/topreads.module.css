@@ -31,7 +31,7 @@
 .popular-story-title {
     font-size: 20px;
     text-decoration: none;
-    color: #bbb;
+    color: inherit;
 }
 
 .popular-story-title:hover {

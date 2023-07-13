@@ -3,16 +3,19 @@
     justify-content: space-between;
     padding: 20px 0 10px;
     align-items: center;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .navlink {
     text-decoration: none;
-    color: #bbb;
+    color: inherit;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .navlink:hover {
-    color: rgb(151, 153, 19);
+    color: rgb(19, 73, 153);
 }
 
 .branding {
@@ -23,4 +26,9 @@
     display: flex;
     gap: 30px;
     list-style: none;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
 }

@@ -6,9 +6,26 @@
 
 html,
 body {
-  max-width: 80vw;
   overflow-x: hidden;
-  background-color: #111;
-  color: #bbb;
+
+}
+
+main {
+  width: 80vw;
   margin: 0 auto;
+}
+
+.base-theme {
+  transition: all 1s ease;
+}
+
+.dark {
+  color: #bbb;
+  background-color: #111;
+
+}
+
+.light {
+  color: #111;
+  background-color: #fff;
 }

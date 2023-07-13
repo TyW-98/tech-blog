@@ -13,7 +13,7 @@
 .subheading {
     display: inline;
     text-decoration: none;
-    color: #bbb;
+    color: inherit;
     text-decoration: underline;
 }
 
