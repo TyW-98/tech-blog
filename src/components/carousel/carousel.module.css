@@ -49,7 +49,7 @@
 
 .read-more-link {
     text-decoration: none;
-    color: white;
+    color: inherit;
     text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@
 
 .top5-stories-titles {
     text-decoration: none;
-    color: #bbb;
+    color: inherit;
     font-size: 16px;
 }
 
