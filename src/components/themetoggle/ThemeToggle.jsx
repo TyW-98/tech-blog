@@ -18,13 +18,13 @@ export default function ThemeToggle() {
       }`}
       onClick={handleTheme}
     >
-      <div className={styles.moon}>🌙</div>
       <div
         className={`${styles.indicator} ${
           theme === "dark" ? styles.dark : styles.light
         }`}
       ></div>
       <div className={styles.sun}>😎</div>
+      <div className={styles.moon}>🌙</div>
     </div>
   );
 }
