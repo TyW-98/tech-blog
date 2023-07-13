@@ -4,8 +4,9 @@
     border-radius: 15px;
     position: relative;
     align-items: center;
-    padding: 2.5px 10px;
+    padding: 2.5px 5px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .moon,
@@ -19,4 +20,12 @@
     background-color: #bbb;
     border-radius: 50%;
     position: absolute;
+}
+
+.dark {
+    right: 5px;
+}
+
+.light {
+    left: 5px
 }
