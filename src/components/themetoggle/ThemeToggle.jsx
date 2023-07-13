@@ -12,7 +12,12 @@ export default function ThemeToggle() {
   }
 
   return (
-    <div className={styles.container} onClick={handleTheme}>
+    <div
+      className={`${styles.container} ${
+        theme === "dark" ? styles["dark-div"] : styles["light-div"]
+      }`}
+      onClick={handleTheme}
+    >
       <div className={styles.moon}>🌙</div>
       <div
         className={`${styles.indicator} ${
